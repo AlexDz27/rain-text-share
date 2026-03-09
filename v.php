@@ -1,6 +1,6 @@
 <?php
 
-$previousContent = file_get_contents('input.txt');
+$previousContent = file_get_contents('v.txt');
 
 ?>
 <!DOCTYPE html>
@@ -10,14 +10,14 @@ $previousContent = file_get_contents('input.txt');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script src="/assets/js/main.js" defer></script>
-  <title>Document</title>
+  <title>Views' stops</title>
 </head>
 <body>
 
 <main class="main cont">
-  <form action="save.php" method="POST">
+  <form action="save-v.php" method="POST">
     <textarea name="textarea" class="textarea"><?= $previousContent ?></textarea>
-    <button class="btn btn-save" type="submit">Save</button>
+    <button class="btn btn-save" type="submit">Save stops</button>
   </form>
 </main>
   
