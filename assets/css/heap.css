@@ -8,6 +8,7 @@ form .textarea {
   box-sizing: border-box;
   font-size: 0.9em;
   height: 75vh;
+  line-height: 1.65;
 }
 
 .btn-save {
