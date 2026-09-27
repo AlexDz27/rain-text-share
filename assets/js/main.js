@@ -1,2 +1,10 @@
 const textarea = document.getElementById('textarea')
-textarea.scrollTop = textarea.scrollHeight
+moveCursorToEnd()
+
+function moveCursorToEnd() {
+  const len = textarea.value.length;
+  textarea.focus();
+  textarea.setSelectionRange(len, len);
+
+  textarea.scrollTop = textarea.scrollHeight
+}
