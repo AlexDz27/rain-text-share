@@ -16,7 +16,7 @@ $previousContent = file_get_contents('v.txt');
 
 <main class="main cont">
   <form action="save-v.php" method="POST">
-    <textarea name="textarea" class="textarea"><?= $previousContent ?></textarea>
+    <textarea id="textarea" name="textarea" class="textarea"><?= $previousContent ?></textarea>
     <button class="btn btn-save" type="submit">Save stops</button>
   </form>
 </main>
